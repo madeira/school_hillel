@@ -7,8 +7,8 @@ let numb;
 
 numb = prompt("Enter a number:", "8");
 
-if (numb == +numb ) {
+if (!(isNaN(numb))) {
     alert('It was a number.');
-} else  if (numb !== null) {
+} else {
     alert('It was not a number.');
 };
