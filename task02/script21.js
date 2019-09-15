@@ -18,4 +18,4 @@ for (i = 1;; i++) {
     };
 };
 
-console.log(`number of a count is ${i}, summ of this number ${numb}`);
+console.log(`number of a count is ${i}, summ of this number ${numb}, arithmetical mean ${numb/i}`);
