@@ -5,14 +5,9 @@
 
 let i = 0;
 let y = 1;
+let sum = '';
+let z;
 
-for (;;) {
-    let z = i + y;
-      i = y;
-      y = z;
-    console.log(y);
+for (; y <= 1000; z = i + y, i = y, y = z, sum += i + ' ' ) {}
 
-    if (y > 1000){
-        break;
-    };
-};
+console.log(sum);
