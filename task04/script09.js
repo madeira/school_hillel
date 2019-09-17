@@ -11,3 +11,13 @@
 // var plus = createAdder(5);
 // alert( plus(1) ); // 6
 // alert( plus(5) ); // 10
+
+function createAdder(param) {
+    let firstItem = param;
+    
+    return function (param2) {
+        let delta = firstItem + param2;
+
+        return delta;
+    };
+};
