@@ -4,17 +4,14 @@
 // с использованием только рекурсии:
 
 function sum(...params) {
+    let x = 0;
     if (params.length == 0) {
-        return
+        return x;
     } else {
-        let up = 0;
-        for (let item of params) {
-            up += params[params.length - 1];
-            params.pop()
-            sum(params);
-        }
-        return up;
-    };
+        x += +params[params.length - 1];
+        params.pop();
+        return x + sum(...params);
+    }
 };
 
 console.log( sum(1, 2, 3, 4, 5) ); // 15
