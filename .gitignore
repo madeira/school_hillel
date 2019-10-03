@@ -19,9 +19,14 @@ codekit-config.json
 /other.xml
 /packages.xml
 /web-browsers.xml
+/node_modules
 
 ### OS X artifacts
 *.DS_Store
 .AppleDouble
 :2e_*
 :2e#
+.eslintrc.json
+package-lock.json
+package.json
+.vscode
